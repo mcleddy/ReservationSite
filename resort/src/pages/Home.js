@@ -4,14 +4,21 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
-import { FaHome } from 'react-icons/fa';
 
-const home =() => {
-    return(
+const home = () => {
+    return (
         <>
-        <Hero>
-
-        </Hero>
+            <Hero>
+                <Banner
+                    title="luxurious rooms"
+                    subtitle="delux rooms starting at $250">
+                    <Link to="/rooms" className="btn-primary">
+                        our rooms
+                    </Link>
+                </Banner>
+            </Hero>
+            <Services />
+            <FeaturedRooms />
         </>
     );
 };
