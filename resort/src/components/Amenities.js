@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import gif from "../images/gif/maninwater.gif";
+import pool from "../images/pool.jpg"
 export default class Events extends Component {
     render() {
         return (
@@ -32,9 +33,9 @@ export default class Events extends Component {
                             <li>Complimentary Breakfast</li>
                             <li>Free Room-front Parking</li><li>Lobby Space to Work From</li>
                         </ul>
-                    </div>
-                </div>
-            </section>
+                    </div>               
+            <img className="font-effect-neon" id="poolpic" src={pool}></img></div>
+         </section>
         );
     }
 }

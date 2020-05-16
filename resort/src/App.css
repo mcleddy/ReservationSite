@@ -1,3 +1,4 @@
+
 * {
   margin: 0;
   padding: 0;
@@ -166,8 +167,7 @@ h6 {
 
 .roomsHero {
   min-height: calc(100vh - 66px);
-  background: url("./images/nightsky.jpeg") center/cover no-repeat;
-  display: flex;
+   display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -239,9 +239,7 @@ h6 {
 .services {
   padding: 5rem 0;
 }
-.services {
-background: black;
-}
+
 
 .services-center {
   width: 90vw;
@@ -279,8 +277,7 @@ background: black;
 }
 
 .amenities{
-  background: #050606;
-  padding: 5rem 0;
+    padding: 5rem 0;
  width: 100%;
   display: block;
   float: right;
@@ -311,13 +308,12 @@ margin-top: 3%;
 
 section {
   margin: 10px 0;
-  padding: 0 20px;
   padding-bottom: 10px;
-  background: #050606;
+  background: url("");
 }
 
 #rightcolumn {
-  background-color: #1E1F1F;
+  background: url("https://i.pinimg.com/564x/25/ba/96/25ba96a3c2f2ef9636be0507876802ad.jpg");
   color: #fff;
   float: right;
   margin-top: -15%;
@@ -329,10 +325,10 @@ section {
 border-radius: 2rem;
 text-transform: uppercase;
 animation: flicker 1.5s infinite alternate;     
-
+position: relative;
 }
 #leftcolumn {
-  background-color: #1E1F1F;
+  background: url("https://i.pinimg.com/564x/25/ba/96/25ba96a3c2f2ef9636be0507876802ad.jpg");
   border: 1px solid #e5e1d9;
   color: #fff;
   float: right;
@@ -344,6 +340,7 @@ animation: flicker 1.5s infinite alternate;
   border-radius: 2rem;
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate ;     
+  
 }
 
 li{
@@ -353,20 +350,83 @@ li{
   font-size: medium;
 }
 
+#poolpic{
+  width: 25%;
+  position: absolute;
+margin-left: 28%;
+margin-top: 15%;
+border: 0.4rem solid #fff;
+border-radius: 2rem;
+text-transform: uppercase;
+animation: flicker 1.5s infinite alternate ; 
+}
 /*end of services */
 /* featured rooms */
 
+#findYourRoom{
+  font-style: italic;
+  color: #fff;
+  padding: 2rem 3rem 2rem;
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+  text-transform: uppercase;
+  animation:  infinite alternate;     
+ margin: 2%;
+ text-align: center;
+ float: left;
+}
+.arrows{
+  width:100%
+}
+#Arrow1{
+  width: 8%;
+  float: left;
+  position: relative;
+  margin-top: 7%;
+  transform: rotate(30deg);
+  margin-bottom: 5%;
+  border-radius: 50%;
+  border: 3%;
+}
+#Arrow2{
+  width: 8%;
+  float: left;
+  position: relative;
+  margin-top: 7%;
+  transform: rotate(150deg);
+  border-radius: 50%;
+  border: 3%;
+}
+#eye1{
+  width:20%;
+  float: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 50%;
+}
+#eye2{
+  width: 20%;
+  float: left;
+  margin-left: 5%;
+  border-radius: 50%;
+}
+
 .featured-rooms {
   padding: 5rem 0;
-  background: url("./images/nightsky.jpeg");
+ width: 100%;
+  display: block;
+  float: right;
+  margin-bottom: 10px;
+  margin-top: 10%;
+
 }
 .featured-rooms-center {
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  grid-row-gap: 2rem;
-  grid-column-gap: 40px;
+  grid-row-gap: 15%;
+  grid-column-gap: 5%;
 }
 @media screen and (min-width: 776px) {
   .featured-rooms-center {
@@ -385,18 +445,25 @@ li{
 .room {
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
+  border: 0.4rem solid #fff;
+border-radius: 2rem;
+text-transform: uppercase;
+animation: flicker 1.5s infinite alternate ; 
+
 }
 .room:hover {
   box-shadow: var(--darkShadow);
 }
 
 .img-container {
-  position: relative;
+  position: relative;  
 }
 .img-container img {
   width: 100%;
   display: block;
   transition: var(--mainTransition);
+border: 0.4rem solid #fff;
+  border-radius: 2rem;
 }
 .price-top {
   position: absolute;
@@ -409,6 +476,8 @@ li{
   font-size: 0.5rem;
   text-align: center;
   transition: var(--mainTransition);
+    border: 0.4rem solid #fff;
+border-radius: 2rem;
 }
 .price-top h6 {
   margin-bottom: 0;
@@ -442,6 +511,13 @@ li{
   text-align: center;
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
+  border: 0.4rem solid #fff;
+  border-radius: 2rem;
+}
+#fr{
+  text-align: center;
+  margin-top: 1%;
+  letter-spacing: 2rem;
 }
 /* end of room  */
 /* single room*/
@@ -730,4 +806,28 @@ border-radius: 50%;
   line-height: 70px;
   transform-origin: bottom center;
   border: 1.5px dotted
+}
+
+.footer{
+  padding: 5rem 0;
+  width: 100%;
+   display: block;
+   float: right;
+   margin-top: 10%;
+  background-image: url("./images/footer6.webp");
+background-repeat: no-repeat;
+background-position: bottom;
+  min-height: 700px;
+  background-size: 100%;
+margin-bottom: 0px !important;
+}
+
+.footer2{
+  padding: 0rem 0;
+ width: 100%;
+  display: block;
+  float: right;
+margin-top: 0px !important;
+margin-bottom: 0px !important;
+  background-color: black;
 }
