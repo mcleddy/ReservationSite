@@ -4,21 +4,21 @@ import Hero from "../components/Hero";
 import Banner from "../components/Banner";
 import Services from "../components/Services";
 import FeaturedRooms from "../components/FeaturedRooms";
-import Events from "../components/Events";
-import Amenities from "../components/Amenities"
+import Events from "../components/Events.js";
+import Amenities from "../components/Amenities";
 import Footer from "../components/Footer";
-import Footer2 from "../components/Footer2"
+import Footer2 from "../components/Footer2";
+import About from "../components/About";
 const home = () => {
     return (
         <>
-            <Hero>
-            <h1 contenteditable spellcheck="false">Copper Blues Motel</h1>
-            </Hero>     
-            <Events/>
-            <Amenities/>
+            <Hero/>
+            <About/>
+            <Amenities />
+            <Events />
             <FeaturedRooms />
-            <Footer/>
-            <Footer2/>
+            <Footer />
+            <Footer2 />
         </>
     );
 };

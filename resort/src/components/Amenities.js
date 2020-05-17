@@ -1,41 +1,85 @@
 import React, { Component } from 'react';
-import gif from "../images/gif/maninwater.gif";
-import pool from "../images/pool.jpg"
-export default class Events extends Component {
+import { Card, Button } from 'react-bootstrap';
+
+export default class Amenities extends Component {
     render() {
         return (
             <section className="amenities">
-                <div className="amenitiesChunk">
-                    <h2 className="font-effect-neon" id="amenitiesHeader">AMENITIES</h2>
-                    <img className="amenitiesGif" src={gif}></img>
-                    <div id="rightcolumn">
-                        <h2 class="font-effect-neon">ROOM AMENITIES</h2>
-                        <ul>
-                            <li>Green Tea Memory Foam Mattress</li>
-                            <li>Retro Fridge</li>
-                            <li>Assortment of Pillows, Firm &amp; Fluffy</li>
-                            <li>All Natural Hair &amp; Body Products</li>
-                            <li>Blackout Curtains</li>
-                            <li>Ice cold A/C &amp; quick heat</li>
-                            <li>In-Room Hair Dryer</li>
-                            <li>McCoy Guidebook</li>
-                        </ul>
-                        <div class="room-emenit-img">
-                        </div>
-                    </div>   <div id="leftcolumn">
-                        <h3 class="font-effect-neon">HOTEL AMENITIES</h3>
-                        <ul>
-                            <li>Salt Water Pool &amp; Games</li>
-                            <li>Property-wide WiFi</li>
-                            <li>Firepit &amp; Water Feature</li>
-                            <li>Foosball, Ping Pong, Cornhole &amp; Pinball</li>
-                            <li>24-hour Front Desk</li><li>Local Beer &amp; Wine Tastings</li>
-                            <li>Complimentary Breakfast</li>
-                            <li>Free Room-front Parking</li><li>Lobby Space to Work From</li>
-                        </ul>
-                    </div>               
-            <img className="font-effect-neon" id="poolpic" src={pool}></img></div>
-         </section>
+                <div className="amenitiesHeader">Amenities</div>
+                <div className="amSec1">
+                    <h2>cscn</h2>
+                </div>
+                <div className="amSec">
+                    <h2>cscn</h2>
+                </div>
+                <div className="cards">
+                <div className="card1">
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="card2">
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="card3">
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="card4">
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                <div className="card5">
+                    <Card style={{ width: '18rem' }}>
+                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Card.Title>Card Title</Card.Title>
+                            <Card.Text>
+                                Some quick example text to build on the card title and make up the bulk of
+                                the card's content.
+                            </Card.Text>
+                            <Button variant="primary">Go somewhere</Button>
+                        </Card.Body>
+                    </Card>
+                </div>
+                </div>
+            </section>
         );
     }
 }

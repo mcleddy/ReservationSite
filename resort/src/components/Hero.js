@@ -1,11 +1,11 @@
-import React from "react";
-
-const Hero = ({ children, hero }) => {
-  return <header className={hero}>{children}</header>;
-};
-
-export default Hero;
-
-Hero.defaultProps = {
-  hero: "defaultHero"
-};
+import React, {Component} from "react";
+export default class Hero extends Component {
+  render() {
+     
+      return (
+          <section className="hero">
+              <h2 >Hero</h2>
+          </section>
+      );
+  }
+}

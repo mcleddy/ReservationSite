@@ -1,17 +1,73 @@
 import React, { Component } from 'react';
+import { Card, Button } from 'react-bootstrap';
 
 export default class Events extends Component {
-
-  render() {
-    return (
-      <section className="events">
-
-        <div id="A">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus nec quam tincidunt, iaculis mi non, hendrerit felis. Nulla pretium lectus et arcu tempus, quis luctus ex imperdiet. In facilisis nulla suscipit ornare finibus. …
-</div>
-
-        <div id="B" class="wavy">… In iaculis fermentum lacus vel porttitor. Vestibulum congue elementum neque eget feugiat. Donec suscipit diam ligula, aliquam consequat tellus sagittis porttitor. Sed sodales leo nisl, ut consequat est ornare eleifend. Cras et semper mi, in porta nunc.</div>
-
-      </section>
-    );
-  }
+    render() {
+        return (
+            <div className="events">
+                <div className="slantedDivA">
+                    <div className="eventCards">
+                        <div className="cards1">
+                            <div className="topCard">
+                                <Card style={{ width: '18rem' }}>
+                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of
+                                            the card's content.
+                            </Card.Text>
+                                        <Button variant="primary">Go somewhere</Button>
+                                    </Card.Body>
+                                </Card>
+                            </div>            
+                            <h2 className="eventsHeader">Events</h2>
+                            <div className="topCard">
+                                <Card style={{ width: '18rem' }}>
+                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of
+                                            the card's content.
+                            </Card.Text>
+                                        <Button variant="primary">Go somewhere</Button>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </div>
+                        
+                        <div className="cards2">
+                            <div className="card">
+                                <Card style={{ width: '18rem' }}>
+                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of
+                                            the card's content.
+                            </Card.Text>
+                                        <Button variant="primary">Go somewhere</Button>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                            <div className="card">
+                                <Card style={{ width: '18rem' }}>
+                                    <Card.Img variant="top" src="holder.js/100px180" />
+                                    <Card.Body>
+                                        <Card.Title>Card Title</Card.Title>
+                                        <Card.Text>
+                                            Some quick example text to build on the card title and make up the bulk of
+                                            the card's content.
+                            </Card.Text>
+                                        <Button variant="primary">Go somewhere</Button>
+                                    </Card.Body>
+                                </Card>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    }
 }

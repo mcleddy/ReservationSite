@@ -14,7 +14,7 @@ export default class Navbar extends Component {
     };
     render() {
         return (
-            <nav className="navebar">
+            <nav className="navbar">
                 <div className="nav-center">
                     <ul
                         className={this.state.isOpen ? "nav-links show-nav" : "nav-links"} >
