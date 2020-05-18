@@ -209,7 +209,7 @@ margin-bottom: 50px;
   height: 200px;
   color: #ececec;
   width: 100%;
-  height: 600px;
+  height: 700px;
   content: '';
   background: inherit;
   z-index: -1;
@@ -223,16 +223,37 @@ margin-bottom: 50px;
   margin-top: -50px;
   padding-top: 50px;
 }
-.aboutHeader{
+#aboutHeader1{
   background: black;
-  width: 50%;
-  height:150px;
+  width: 10%;
   transform-origin: top left;
-  transform: skewY(5deg);
-  margin-top: -25px;
+  transform: skewY(-5deg);
+  font-weight: bolder;
+font-family: 'Exo 2';
+font-size: xx-large;
+letter-spacing: 2.5rem;
+display: block;
+float: left;
+margin-left: 20%;
+margin-bottom: 0px;
+height: 30px;
+margin-top: 12px;
+}
+#aboutHeader2{
+  background: black;
+  width: 30%;
+  transform-origin: top left;
+  font-weight: bolder;
+font-family: 'Exo 2';
+font-size: xx-large;
+letter-spacing: 2.5rem;
+display: block;
+float: right;
+margin-right: 11%;
+margin-bottom: 15px;
+margin-top: -12px;
 }
 .aboutSection1{
-  margin-top: 50px;
   background: white;
   width: 35%;
   height: 400px;
@@ -241,6 +262,8 @@ margin-bottom: 50px;
   margin-left: 15%;
   transform-origin: top left;
   transform: skewY(-5deg);
+ margin-top: 50px;
+ box-shadow:  -8px 10px teal;
 }
 .aboutSection2{
   background: white;
@@ -249,15 +272,18 @@ margin-bottom: 50px;
   display:block;
   float: left;
   margin-left: 3%;
+box-shadow: teal 8px 10px;
 }
-.aboutGif{
-  background: black;
-  width: 50%;
-  height:150px;
-  transform-origin: top left;
-  transform: skewY(5deg);
-  margin-top: 250px;
+
+.about-gif{
+  height: 300px;
+  display: block;
+  float: left;
+ position: absolute;
+ margin-left: 40%;
+ margin-top: 5%;
 }
+
 /*Services*/
 .services {
   padding: 5rem 0;
@@ -304,10 +330,23 @@ margin-bottom: 50px;
   display: block;
   margin-bottom: 37%;
   width: 100%;
+  height: 0px
 }
 
-.amenitiesHeader{
-  margin-left: 10%;
+#amenitiesHeader{
+ margin-top: 5%;
+  font-family: 'Exo 2';
+  font-style: italic;
+  font-weight: bolder;
+  font-size: xx-large;
+letter-spacing: 2.5rem;
+transform-origin: top left;
+transform: skewY(3deg);
+width:100%;
+display: block;
+float: left;
+color: rgb(112, 11, 112);
+text-align: center;
 }
 .amSec1{
   display: block;
@@ -315,51 +354,124 @@ margin-bottom: 50px;
   float: left;
   width: 42.4%;
   margin-left: 12%;
-  height: 450px;
+  height: 380px;
   margin-top: -70px;
- 
+ box-shadow: teal 8px 10px;
+}
+.list{
+  width: 100%;
+  display: block;
+  float: left;
+  margin: 5%;
+  margin-left: 10%;
+  transform-origin: top left;
+transform: skewY(1deg);
+}
+
+.listitem{
+  display: block;
+  float: left;
+  margin-left: 5%;
+  transform-origin: top left;
+transform: skewY(1deg);
+}
+
+.listitemRight{
+  display: block;
+  float: left;
+ margin-left:4%;
+ transform-origin: top left;
+transform: skewY(1deg);
+}
+#roomAmenitiesHeader{
+  transform-origin: top left;
+width:100%;
+display: block;
+float: left;
+color: rgb(112, 11, 112);
+font-family: 'Exo 2';
+font-style: italic;
+font-weight: bold;
+font-size: x-large;
+letter-spacing: 1rem;
+text-align: center;
+margin-top: 5%;
 }
 .amSec{
   display: block;
   background-color: white;
-  float: right;
   width: 30%;
-  margin-right: 15.6%;
-  height: 250px;
-  margin-top: 130px;
+  margin-left: 52%;
    transform-origin: top left;
-  transform: skewY(3deg);
+  transform: skewY(1deg);
+  box-shadow: teal 8px 10px;
+  position: absolute;
+  margin-top: 4%;
+  height: 250px;
+  border: black 1px solid;
 }
 .cards{
+  width:72.4%;
 margin-left: 12%;
 background-color: white;  
-border-bottom: 50px solid white;
 display: block;
 float: left;
+box-shadow: teal 8px 0px; 
+border-top: white 30px solid;
+}
+.poolPic{
+  display: block;
+  float: left;
+  height: 100%;
+}
+
+.roompic{
+  display: block;
+  float: left;
+  height: 100%;
+}
+.barPic{
+  display: block;
+  float: left;
+  height: 100%;
+}
+.bathroomPic{
+  display: block;
+  float: left;
+  width: 101%;
 }
   .card1{
   background: white;
   float: left;
-  margin: 20px;
   height: 200px;
+  width: 20%;
+  border: 1px solid black;
 }
 .card2{
   background: white;
   float: left;
-  margin: 20px;
+  height: 200px;
+  width: 20%;
+  border: 1px solid black;
 }.card3{
   background: white;
   float: left;
-  margin: 20px;
+  height: 200px;
+  width: 20%;
+  border: 1px solid black;
 }.card4{
   background: white;
   float: left;
-  margin: 20px;
+  height: 200px;
+  width: 20%;
+  border: 1px solid black;
 }
 .card5{
   background: white;
   float: left;
-  margin: 20px;
+  height: 200px;
+  width: 20%;
+  border: 1px solid black;
 }
 #amenitiesHeader{
 margin-left: 3%;
@@ -367,43 +479,6 @@ font-weight: bolder;
 font-family: 'Exo 2';
 font-size: 50px;
 letter-spacing: 2rem;
-}
-
-section {
-  margin: 10px 0;
-  padding-bottom: 10px;
-  background: url("");
-}
-
-#rightcolumn {
-  background: url("https://i.pinimg.com/564x/25/ba/96/25ba96a3c2f2ef9636be0507876802ad.jpg");
-  color: #fff;
-  float: right;
-  margin-top: -15%;
-  padding: 40px 40px 7%;
-  width: 30%;
-  max-width: 480px;
-  margin-right: 5%;
-  border: 0.4rem solid #fff;
-border-radius: 2rem;
-text-transform: uppercase;
-animation: flicker 1.5s infinite alternate;     
-position: relative;
-}
-#leftcolumn {
-  background: url("https://i.pinimg.com/564x/25/ba/96/25ba96a3c2f2ef9636be0507876802ad.jpg");
-  border: 1px solid #e5e1d9;
-  color: #fff;
-  float: right;
-  margin: -60px 0 0;
-  padding: 40px;
-  width: 30%;
-  max-width: 480px;
-  border: 0.4rem solid #fff;
-  border-radius: 2rem;
-  text-transform: uppercase;
-  animation: flicker 1.5s infinite alternate ;     
-  
 }
 
 li{
@@ -442,19 +517,30 @@ animation: flicker 1.5s infinite alternate ;
   display: grid;
   padding-bottom: 50px;
 }
-.eventsHeader{
-  margin-top: 50px;
+#eventsHeader{
   width: 20%;
   display: block;
   float: left;
   margin-left: 10%;
+  transform-origin: top left;
+  font-weight: bolder;
+font-family: 'Exo 2';
+font-size: 50px;
+letter-spacing: 2.5rem;
+}
+.events-gif{
+  height: 250px;
+  margin-left: 10%;
+  display: block;
+  float: left;
+margin-top: -50px;
 }
 .eventCards{
   margin-top: 50px;
   width: 90%;
   display: block;
   float: left;
-  margin-left: 10%;
+  margin-left: 9%;
 }
 .cards1{
   width: 100%;
@@ -465,7 +551,8 @@ animation: flicker 1.5s infinite alternate ;
   margin-left: 5%;
   width: 80%;
   display: block;
-  float: left;
+  float: left; transform-origin: top left;
+  transform: skewY(2deg);
 }
 .topCard{
   transform-origin: top left;
@@ -476,13 +563,20 @@ animation: flicker 1.5s infinite alternate ;
   display: block;
   float: left;
   height: 100px;
+  color: black;
+  box-shadow: teal -8px 10px;
 }
-.card{
-  transform-origin: top left;
-  transform: skewY(2deg);
- width: 100%;
+.bottomCard{
+
+ width: 60%;
   background: white;
   margin-bottom: 50px;
+  display: block;
+  float: left;
+  height: 100px;
+  color: black;
+  box-shadow: teal -8px 10px;
+ width: 100%;
 }
 
 
