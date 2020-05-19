@@ -96,11 +96,44 @@ h6 {
   top: 0; 
   width: 100%;
   padding: 1rem 2rem;
-  background:url("./images/nightsky.jpeg");
+  background:black;
   z-index: 1;
-  height: 150px;
+  height: 170px; 
+   text-align: center;
+}
+.navbarTop{
+  width: 100%;
+  display: block;
+  float: left;
 }
 
+.navGif{
+  display: block;
+  float: left;
+  width:12%;
+  margin-left: 18%;
+}
+.HotelName{
+  display: block;
+  float: left;
+  margin-left: 5%;
+  width: 28%;
+  line-height: 3rem;
+  font-weight: 600;
+letter-spacing: 1.5rem;
+}
+
+#phoneNumber{
+  display: block;
+  float: left;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: var(--mainSpacing);
+  text-align: right;
+  margin-top: 2.5%;
+  margin-left: 5%;
+  color: black;
+}
 .navbar:after{
     position: absolute;
     width: 100%;
@@ -116,43 +149,38 @@ h6 {
     transform: skewY(2deg);
   }
 .nav-header {
-  display: flex;
   justify-content: space-between;
 }
 .nav-btn {
   background: transparent;
   border: none;
   cursor: pointer;
-  outline: none; 
-  float: right;
+  outline: none;
 }
 .nav-icon {
   font-size: 2rem;
   color: var(--primaryColor);
 }
 .nav-links {
-  height: 0;
   overflow: hidden;
   transition: var(--mainTransition);
   list-style-type: none;
+  width: 100%;
 }
 .nav-links a {
-  display: block;
+  display: flex;
   text-decoration: none;
   padding: 1rem 0;
   color: var(--mainBlack);
   transition: var(--mainTransition);
-  text-align: center;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: var(--mainSpacing);
   text-align: right;
+  color: black;
 }
 .nav-links a:hover {
   color: var(--primaryColor);
-}
-.heart{
-  height: 50px;
 }
 
 .show-nav {
@@ -165,14 +193,19 @@ h6 {
   .nav-center {
     max-width: 1170px;
     margin: 0 auto;
-    display: flex;
+    display: block;
+    float: left;
+    text-align: center;
+    width: 100%;
   }
   .nav-links {
     height: auto;
     display: flex;
+    text-align: center;
+    margin-left: 35%;
   }
   .nav-links a {
-    margin: 0 1rem;
+    margin: 1rem;
     padding: 0.5rem 0;
   }
 }
@@ -239,6 +272,28 @@ margin-bottom: 0px;
 height: 30px;
 margin-top: 12px;
 }
+.aboutText{
+  display: block;
+  float: left;
+  margin-left: 10%;
+  color: black;
+  font-family: 'Exo 2';
+  font-weight: bolder;
+  width: 65%;
+  font-size: large;
+  line-height: initial;
+}
+.aboutTextBold{
+  display: block;
+  float: left;
+  margin-left: 10%;
+  color: black;
+  font-family: 'Exo 2';
+  font-weight: bolder;
+  width: 70%;
+  font-size: x-large;
+  margin-top: 5%;
+}
 #aboutHeader2{
   background: black;
   width: 30%;
@@ -273,6 +328,28 @@ margin-top: -12px;
   float: left;
   margin-left: 3%;
 box-shadow: teal 8px 10px;
+}
+.aboutText2{
+  display: block;
+  float: left;
+  margin-left: 20%;
+  color: black;
+  font-family: 'Exo 2';
+  font-weight: bolder;
+  width: 65%;
+  font-size: large;
+  line-height: initial;
+}
+.aboutTextBold2{
+  display: block;
+  float: left;
+  margin-left: 20%;
+  color: black;
+  font-family: 'Exo 2';
+  font-weight: bolder;
+  width: 70%;
+  font-size: x-large;
+  margin-top: 5%;
 }
 
 .about-gif{
@@ -521,7 +598,7 @@ animation: flicker 1.5s infinite alternate ;
   width: 20%;
   display: block;
   float: left;
-  margin-left: 10%;
+  margin-left: 5%;
   transform-origin: top left;
   font-weight: bolder;
 font-family: 'Exo 2';
@@ -530,55 +607,109 @@ letter-spacing: 2.5rem;
 }
 .events-gif{
   height: 250px;
-  margin-left: 10%;
+float: right;
   display: block;
-  float: left;
-margin-top: -50px;
+margin-top: -20px;
 }
 .eventCards{
   margin-top: 50px;
   width: 90%;
   display: block;
   float: left;
-  margin-left: 9%;
 }
-.cards1{
-  width: 100%;
+
+.Card1{
+ width: 60%;
+  background: white;
+  margin-bottom: 50px;
   display: block;
   float: left;
+  height: 100px;
+  color: black;
+  box-shadow: teal -8px 10px;
+  margin-left: 7%;
 }
-.cards2{
+.Card2
+{
+  margin-left: 14%;
+ width: 60%;
+  background: white;
+  margin-bottom: 50px;
+  display: block;
+  float: left;
+  height: 100px;
+  color: black;
+  box-shadow: teal -8px 10px;
+}
+.Card3{
+  background: white;
+  margin-bottom: 50px;
+  display: block;
+  float: left;
+  height: 100px;
+  color: black;
+  box-shadow: teal -8px 10px;
+ width: 60%;
+ margin-left: 21%;
+}
+.Card4{
+  margin-left: 28%;
+   background: white;
+   margin-bottom: 50px;
+   display: block;
+   float: left;
+   height: 100px;
+   color: black;
+   box-shadow: teal -8px 10px;
+  width: 60%;
+ }
+.eventImg{
+  display: block;
+  float: left;
+  height: 101px;
+  border: solid black 3px;
+  background-color: black;
+  margin-top: -1px;
+  margin-left: -1px;
+}
+.eventTitle{
+  display: block;
+  float: left;
+  width: 30%;
+  font-size: large;
+  font-weight: bolder;
   margin-left: 5%;
-  width: 80%;
-  display: block;
-  float: left; transform-origin: top left;
-  transform: skewY(2deg);
+  margin-top: 2px;
 }
-.topCard{
-  transform-origin: top left;
-  transform: skewY(2deg);
- width: 60%;
-  background: white;
-  margin-bottom: 50px;
+.eventTime{
   display: block;
-  float: left;
-  height: 100px;
-  color: black;
-  box-shadow: teal -8px 10px;
+  float: right;
+  width: 50%;
+  font-size: medium;
+  font-weight: bolder;
+  margin-right: 5%;
 }
-.bottomCard{
-
- width: 60%;
-  background: white;
-  margin-bottom: 50px;
+.eventDescription{
   display: block;
   float: left;
-  height: 100px;
-  color: black;
-  box-shadow: teal -8px 10px;
- width: 100%;
+  margin-left: 3%;
+  width: 50%;
+  margin-top: 5px;
+}
+.getTickets{
+  float: right;
+  margin-right: 2%;
+  margin-top: 35px;
+  box-shadow: teal -2px 3px;
+  border: black double 3px;
+  font-weight: bolder;
 }
 
+.btn-primary:hover {
+  background: var(--primaryColor);
+  color: black;
+  font-size: large;
+}
 
 /* featured rooms */
 .featured-rooms {
@@ -906,16 +1037,15 @@ border-radius: 2rem;
 
 
 h1 {
-  font-size: 12rem;
+  font-size: 2rem;
   font-weight: 200;
   font-style: italic;
   color: #fff;
-  padding: 2rem 3rem 2rem;
+  padding: 1rem 3rem 2rem;
   border: 0.4rem solid #fff;
   border-radius: 2rem;
   text-transform: uppercase;
   animation: flicker 1.5s infinite alternate;     
- margin: 2%;
 }
 
 h1::-moz-selection {

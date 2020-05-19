@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { FaAlignRight, FaConciergeBell } from 'react-icons/fa';
-import heart from "../images/gif/heart.gif";
-import water from "../images/gif/maninwater.gif";
 import eye from "../images/gif/eye.gif";
-import clap from "../images/gif/clapping.gif"
 export default class Navbar extends Component {
     state = {
         isOpen: false
@@ -15,27 +11,37 @@ export default class Navbar extends Component {
     render() {
         return (
             <nav className="navbar">
+                <div className="navbarTop">
+                <img className="navGif" src={eye} />
+
+                    <h1 className="HotelName"> Copper Blues Motel</h1>
+                    <h4 className="font-effect-neon" id="phoneNumber">Tel: 999 000 0099</h4>
+                </div>
+
                 <div className="nav-center">
                     <ul
                         className={this.state.isOpen ? "nav-links show-nav" : "nav-links"} >
-                      <img className="heart" src={heart}/>   
-                      <li>      
+                        <li>
                             <Link to="/" class="font-effect-neon">
-                               Home
+                                Home
                             </Link>
                         </li>
-                        <img className="heart" src={eye}/>   
                         <li>
-                            <Link to="/rooms" class="font-effect-neon">Rooms</Link>
+                            <Link to="/rooms" class="font-effect-neon">About</Link>
                         </li>
-                        <img className="heart" src={water}/>   
                         <li>
                             <Link href="/.services" class="font-effect-neon">Amenities</Link>
                         </li>
-                        <img className="heart" src={clap}/>   
                         <li>
                             <Link to="/rooms" class="font-effect-neon">Events</Link>
                         </li>
+                        <li>
+                            <Link to="/rooms" class="font-effect-neon">Featured Rooms</Link>
+                        </li>
+                        <li>
+                            <Link to="/rooms" class="font-effect-neon">Find Room</Link>
+                        </li>
+
                     </ul>
                 </div>
             </nav >
