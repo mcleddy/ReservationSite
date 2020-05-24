@@ -3,8 +3,8 @@ export default class Hero extends Component {
   render() {
      
       return (
-          <section className="hero">
-              <h2 >Hero</h2>
+          <section className="hero" id="hero">
+              
           </section>
       );
   }

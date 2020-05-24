@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-
 }
 :root {
   --primaryColor: #af9a7d;
@@ -24,7 +23,8 @@ body {
   color: var(--mainBlack);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   line-height: 1.4;
-  background: url("./images/nightsky.jpeg");
+  background: url("./images/swirls.jpg");
+  margin: 0px;
 }
 h1 {
   font-size: 3em;
@@ -60,13 +60,14 @@ h6 {
   display: inline-block;
   text-decoration: none;
   letter-spacing: var(--mainSpacing);
-  color: var(--mainBlack);
-  background: var(--primaryColor);
+  color: white;
+  background: black;
   padding: 0.4rem 0.9rem;
   border: 3px solid var(--primaryColor);
   transition: var(--mainTransition);
   text-transform: uppercase;
   cursor: pointer;
+  border-radius: 5px;
 }
 .btn-primary:hover {
   background: transparent;
@@ -92,14 +93,16 @@ h6 {
 /* end of globals */
 /* Navbar */
 .navbar {
-  position: absolute; 
+  position: fixed; 
   top: 0; 
+  right: 0;
+  left: 0;
+  margin: 0px !important;
   width: 100%;
   padding: 1rem 2rem;
   background:black;
   z-index: 1;
   height: 170px; 
-   text-align: center;
 }
 .navbarTop{
   width: 100%;
@@ -403,11 +406,11 @@ box-shadow: teal 8px 10px;
 /*Amenities*/
 .amenities{
   padding: 5rem 0;
- width: 100%;
   display: block;
   margin-bottom: 37%;
   width: 100%;
-  height: 0px
+  height: 0px;
+  background: url("./images/swirls.jpg");
 }
 
 #amenitiesHeader{
@@ -494,7 +497,7 @@ background-color: white;
 display: block;
 float: left;
 box-shadow: teal 8px 0px; 
-border-top: white 30px solid;
+border-top: white 50px solid;
 }
 .poolPic{
   display: block;
@@ -536,7 +539,8 @@ border-top: white 30px solid;
   height: 200px;
   width: 20%;
   border: 1px solid black;
-}.card4{
+}
+.card4{
   background: white;
   float: left;
   height: 200px;
@@ -588,7 +592,7 @@ animation: flicker 1.5s infinite alternate ;
   bottom: 0;
   left: 0;
   transform-origin: top left;
-  transform: skewY(-3deg);
+  transform: skewY(3deg);
   background-color: black;
   color: white;
   display: grid;
@@ -871,7 +875,33 @@ border-radius: 2rem;
 }
 /* end of room  */
 /* single room*/
+#banner{
+  border: solid white 2px;
+}
+.bannerSection{
+text-align: center;
+}
+#bannerTitle{
+  font-size: x-large;
+  text-transform: uppercase;
+}
 
+#backBtn{
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: var(--mainSpacing);
+  color: white;
+  background: black;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid var(--primaryColor);
+  transition: var(--mainTransition);
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 5px;
+}
+#backBtn:hover{
+font-size: large;
+}
 .single-room {
   padding: 5rem 0 0 0;
 }
@@ -882,16 +912,23 @@ border-radius: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   grid-row-gap: 2rem;
   grid-column-gap: 50px;
+
 }
 .single-room-images img {
   width: 100%;
-  display: block;
+  display: block;  
+  border: white 2px solid;
 }
 .single-room-info {
   width: 80vw;
   display: grid;
   grid-template-columns: 1fr;
   margin: 2rem auto;
+  background-color: black;
+  color: white;
+  margin-bottom: 0px;
+  padding: 8px;
+  outline: solid white 2px;
 }
 .desc,
 .info {
@@ -915,7 +952,10 @@ border-radius: 2rem;
 }
 .room-extras {
   width: 80vw;
-  margin: 0 auto 3rem auto;
+  margin: 0 auto 3rem auto;  background-color: black;
+  color: white;
+  padding: 8px;
+  outline: white 2px solid;
 }
 .room-extras h6 {
   text-transform: capitalize;
@@ -927,6 +967,7 @@ border-radius: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-column-gap: 2rem;
   grid-row-gap: 1rem;
+
 }
 @media screen and (min-width: 992px) {
   .single-room-images,
@@ -971,14 +1012,26 @@ border-radius: 2rem;
 }
 /* end of roomlist */
 /*  rooms fitler*/
+
 .filter-container {
+  margin-top: 7%;
+  width: 80%;
+  margin-left: 10%;
   padding: 5rem 0;
+  background-color: white;
+  border: 4px solid black;
+  border-radius: 5px;
+}
+
+.searchRooms{
+  margin-left: 10%;
 }
 .filter-form {
-  width: 60vw;
-  margin: 0 auto;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(202px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(150px, 2fr));
   grid-row-gap: 2rem;
   grid-column-gap: 40px;
 }
@@ -993,7 +1046,7 @@ border-radius: 2rem;
 .form-control {
   width: 100%;
   background: transparent;
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 .size-inputs {
   display: flex;
@@ -1103,18 +1156,17 @@ border-radius: 50%;
   width: 100%;
    display: block;
    float: right;
-  background-image: url("./images/footer6.webp");
+  background-image: url("./images/footer-top.jpg");
 background-repeat: no-repeat;
 background-position: bottom;
-  min-height: 800px;
+  min-height: 400px;
   background-size: 100%;
 margin-bottom: 0px !important;
 }
 
 .footer2{
-  padding: 0rem 0;
  width: 100%;
- height: 200px;
+ height: 100px;
   display: block;
   float: right;
 margin-top: -1px !important;

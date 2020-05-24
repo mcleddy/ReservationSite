@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Card, Button } from 'react-bootstrap';
 import pool from "../images/pool.jpg"
 import roompic from "../images/hotelroom.jpg";
 import barPic from "../images/bar.jpg";
@@ -8,7 +7,7 @@ import bathroomPic from "../images/bathroom.jpg";
 export default class Amenities extends Component {
     render() {
         return (
-            <section className="amenities">
+            <section className="amenities" id="amenities">
 
                 <div className="amSec1">
                     <div className="font-effect-neon" id="amenitiesHeader">Amenities</div>
@@ -44,19 +43,19 @@ export default class Amenities extends Component {
                         <h2 className="listitemRight">Fitness Center</h2>
                         <h2 className="listitemRight">Foosball, Ping Pong & Cornhole</h2>
                     <div className="card1">
-                        <img className="poolPic" src={pool} />
+                        <img className="poolPic" src={pool} alt="pool" />
                     </div>
                     <div className="card2">
-                        <img className="roompic" src={roompic} />
+                        <img className="roompic" src={roompic}alt="roompic" />
                     </div>
                     <div className="card3">
-                        <img className="barPic" src={barPic} />
+                        <img className="barPic" src={barPic} alt="barpic" />
                     </div>
                     <div className="card4">
-                        <img className="lobbyPic" src={lobbyPic} />
+                        <img className="lobbyPic" src={lobbyPic} alt="lobbypic"/>
                     </div>
                     <div className="card5">
-                        <img className="bathroomPic" src={bathroomPic} />
+                        <img className="bathroomPic" src={bathroomPic} alt="bathroompic" />
                     </div>
                 </div>
             </section>

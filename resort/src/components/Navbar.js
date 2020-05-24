@@ -12,7 +12,7 @@ export default class Navbar extends Component {
         return (
             <nav className="navbar">
                 <div className="navbarTop">
-                <img className="navGif" src={eye} />
+                <img className="navGif" src={eye} alt="eye" />
 
                     <h1 className="HotelName"> Copper Blues Motel</h1>
                     <h4 className="font-effect-neon" id="phoneNumber">Tel: 999 000 0099</h4>
@@ -22,24 +22,24 @@ export default class Navbar extends Component {
                     <ul
                         className={this.state.isOpen ? "nav-links show-nav" : "nav-links"} >
                         <li>
-                            <Link to="/" class="font-effect-neon">
+                            <Link to="/#hero" className="font-effect-neon">
                                 Home
                             </Link>
                         </li>
                         <li>
-                            <Link to="/rooms" class="font-effect-neon">About</Link>
+                            <a href="/#about" className="font-effect-neon">About</a>
                         </li>
                         <li>
-                            <Link href="/.services" class="font-effect-neon">Amenities</Link>
+                            <a href="/#amenities" className="font-effect-neon">Amenities</a>
                         </li>
                         <li>
-                            <Link to="/rooms" class="font-effect-neon">Events</Link>
+                            <a href="/#events" className="font-effect-neon">Events</a>
                         </li>
                         <li>
-                            <Link to="/rooms" class="font-effect-neon">Featured Rooms</Link>
+                            <a href="/#featuredRooms" className="font-effect-neon">Featured Rooms</a>
                         </li>
                         <li>
-                            <Link to="/rooms" class="font-effect-neon">Find Room</Link>
+                            <Link to="/rooms" className="font-effect-neon">Find Room</Link>
                         </li>
 
                     </ul>

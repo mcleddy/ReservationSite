@@ -8,7 +8,7 @@ import event4 from "../images/event4.jpg";
 export default class Events extends Component {
     render() {
         return (
-            <div className="events">
+            <div className="events" id="events">
                 <div className="slantedDivA">
                     <div className="eventCards">
 
@@ -36,7 +36,7 @@ export default class Events extends Component {
                                 </Card.Body>
                             </Card>
                         </div>
-                        <img className="events-gif" src={clap} />
+                        <img className="events-gif" src={clap} alt="clap" />
 
                         <div className="Card3">
                             <Card>

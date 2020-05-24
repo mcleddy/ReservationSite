@@ -41,7 +41,7 @@ const RoomsFilter = ({ rooms }) => {
 
     return (
         <section className="filter-container">
-            <Title title="search rooms" />
+            <div className="searchRooms"><h2>Find Your Room</h2> </div>
             <form className="filter-form">
                 <div className="form-group">
                     <label htmlFor="type">room type</label>
@@ -113,16 +113,6 @@ const RoomsFilter = ({ rooms }) => {
                             onChange={handleChange}
                         />
                         <label htmlFor="breakfast">breakfast</label>
-                    </div>
-
-                    <div className="single-extra">
-                        <input
-                            type="checkout"
-                            name="pets"
-                            checked={pets}
-                            onChange={handleChange}
-                        />
-                        <label htmlFor="pets">pets</label>
                     </div>
                 </div>
             </form>

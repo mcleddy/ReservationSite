@@ -29,7 +29,7 @@ export default class SingleRoom extends Component {
       return (
         <div className="error">
           <h3> no such room could be found...</h3>
-          <Link to="/rooms" className="btn-primary">
+          <Link to="/rooms" className="font-effect-neon">
             back to rooms
           </Link>
         </div>
@@ -46,14 +46,14 @@ export default class SingleRoom extends Component {
       pets,
       images
     } = room;
-    const [main, ...defaultImages] = images;
+    const [...defaultImages] = images;
     console.log(defaultImages);
 
     return (
       <>
-        <StyledHero img={images[0] || this.state.defaultBcg}>
+        <StyledHero img={images[0] || this.state.defaultBcg} id="banner">
           <Banner title={`${name} room`}>
-            <Link to="/rooms" className="btn-primary">
+            <Link to="/rooms" id="backBtn" className="font-effect-neon">
               back to rooms
             </Link>
           </Banner>
